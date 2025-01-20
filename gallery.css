@@ -1,0 +1,136 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(169, 182, 255);
+}
+
+/* Banner Section */
+.info {
+    padding-left: 260px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.head {
+    display: inline-block;
+    animation: scrollText 10s linear infinite;
+    font-size: 18px;
+    padding-top: 10px;
+    color: #000c7c;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(150%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Callout Section */
+.calloutprimary {
+    background: linear-gradient(to right, #000c7c, #1a24de, rgb(169, 182, 255));
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Profile Image Styling */
+.profile {
+    max-width: 100%;
+    border: 2px solid white;
+    margin-bottom: 20px;
+}
+
+/* Off-canvas navigation */
+#my-info {
+    background-color: #000c7c;
+    color: white;
+    font-family: 'Alconica', sans-serif;
+}
+
+/* Remove bullet points from list */
+#my-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#my-info ul li {
+    margin-bottom: 10px;
+}
+
+#my-info ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+#my-info ul li a:hover {
+    color: #000c7c;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Navigation Header */
+#my-info h5 {
+    color: white;
+    font-family: "Alconica", sans-serif;
+    font-weight: bold;
+    font-size: 1.53em;
+}
+
+/* Gallery Container */
+.gallery-container {
+    position: relative;
+    width:100%;
+    height: auto; /* Adjust height as needed */
+    overflow: hidden; /* Hide images that overflow the container */
+    margin: 20px 0;
+    padding-left: 250px;
+}
+
+/* Gallery Images */
+.gallery-images {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    animation: rotateGallery 25s infinite; /* Increase duration for 5 images */
+}
+
+/* Individual Images */
+.gallery-images img {
+    width: auto;
+    height: 80%;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+/* Animation for rotating gallery */
+@keyframes rotateGallery {
+    0% {
+        transform: translateX(0); /* Start from the first image */
+    }
+    20% {
+        transform: translateX(-100%); /* Move to the second image */
+    }
+    40% {
+        transform: translateX(-200%); /* Move to the third image */
+    }
+    60% {
+        transform: translateX(-300%); /* Move to the fourth image */
+    }
+    80% {
+        transform: translateX(-400%); /* Move to the fifth image */
+    }
+    100% {
+        transform: translateX(0); /* Return to the first image */
+    }
+}

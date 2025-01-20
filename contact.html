@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alconica&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <!-- Info Banner -->
+    <div class="info">
+        <h5 class="head">
+            <strong>Take a look at my resume or feel free to contact me via email if you would like!</strong>
+        </h5>
+    </div>
+
+    <!-- Off-Canvas Navigation -->
+    <div class="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas>
+        <div class="grid-y grid-padding-x" style="height: 100%;">
+            <div class="cell shrink">
+                <img class="profile" src="IMG_9388.JPG" alt="Profile picture">
+            </div>
+            <div class="cell auto">
+                <h1 class="navigation-header">Navigation</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="links.html">Links</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="off-canvas-content" data-off-canvas-content>
+        <div class="title-bar hide-for-large">
+            <button class="menu-icon" type="button" data-toggle="my-info"></button>
+            <span class="title-bar-title">Navigation</span>
+        </div>
+
+        <div class="calloutprimary">
+            <div class="grid-container">
+                <h1>Contact Me</h1>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <div class="box">
+                <p>If you would like to reach me, please fill out the form below. You can also download my resume.</p>
+            </div>
+            <form class="form" action="mailto:example@email.com" method="post" enctype="text/plain" class="form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email">
+                <input type="submit" value="Send">
+            </form>
+            <div class="resume-section">
+                <a href="RJStineResume.pdf" target="_blank" download="RJStineResume">
+                    <button class="button" type="button">Download Resume</button>
+                </a>
+                <embed src="RJStineResume.pdf" type="application/pdf" width="100%" height="500">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
